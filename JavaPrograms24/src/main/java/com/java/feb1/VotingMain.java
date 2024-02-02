@@ -26,9 +26,6 @@ public class VotingMain {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
-        // Display the voter list
-		
 	}
 	
 }
