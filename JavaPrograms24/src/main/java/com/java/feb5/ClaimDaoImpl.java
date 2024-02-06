@@ -46,7 +46,7 @@ private Map<Integer, Claim> claimMap;
 		claimMap.remove(claimId);
 		return "Employ Record Deleted...";
 		}
-		return "Employ Record Deleted...";
+		return "Employ Record Not Found...";
 	}
 
 	@Override
