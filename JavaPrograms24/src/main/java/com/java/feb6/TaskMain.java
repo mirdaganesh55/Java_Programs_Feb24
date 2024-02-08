@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 import com.java.feb5.Claim;
 import com.java.feb5.ClaimBAL;
-
+ 
 public class TaskMain {
 	
 	static TaskDAOImpl dao;
@@ -60,6 +60,9 @@ public class TaskMain {
 				dao.performDemoThread();
 				break;
 			}
+			case 6:
+                System.out.println("Exiting the program.");
+                break;
 		}
 		}while(choice!=6);
 }
@@ -85,5 +88,4 @@ public class TaskMain {
 		dao.deleteTask(sc.next());
 		 getAllTasksMain();
 	}
-	
 }
