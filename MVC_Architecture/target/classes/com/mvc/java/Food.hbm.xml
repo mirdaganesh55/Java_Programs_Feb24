@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 13, 2024, 2:57:02 PM by Hibernate Tools 3.6.2.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.mvc.java.Food" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="items">
+        <id name="Id" type="int">
+            <column name="ID"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="item" optimistic-lock="true" type="java.lang.String" unique="false">
+            <column name="item"/>
+        </property>
+        <property generated="never" lazy="false" name="price" optimistic-lock="true" type="int" unique="false">
+            <column name="price"/>
+        </property>
+    </class>
+</hibernate-mapping>
