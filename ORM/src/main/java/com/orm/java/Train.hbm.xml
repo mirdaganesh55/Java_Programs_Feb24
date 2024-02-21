@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Feb 16, 2024, 3:32:01 PM by Hibernate Tools 3.6.2.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.orm.java.Train" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="Train">
+        <id name="number" type="int">
+            <column name="NUMBER"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="trainName" optimistic-lock="true" type="java.lang.String" unique="false">
+            <column name="Train_Name"/>
+        </property>
+        <property generated="never" lazy="false" name="sl_price" optimistic-lock="true" type="int" unique="false">
+            <column name="SL_PRICE"/>
+        </property>
+        <property generated="never" lazy="false" name="TAC_price" optimistic-lock="true" type="int" unique="false">
+            <column name="3A_Price"/>
+        </property>
+        <property generated="never" lazy="false" name="SAC_price" optimistic-lock="true" type="int" unique="false">
+            <column name="2A_Price"/>
+        </property>
+        <property generated="never" lazy="false" name="FAC_price" optimistic-lock="true" type="int" unique="false">
+            <column name="1A_Price"/>
+        </property>
+    </class>
+</hibernate-mapping>

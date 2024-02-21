@@ -1,0 +1,136 @@
+body {
+	font-family: sans-serif, "Arial";
+	background-color: #f7f7f7;
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+
+/* Form Styles */
+#form, #PNREnquiry {
+	width: 50%;
+	margin: auto;
+	margin-top: -6px;
+	background-color: aliceblue;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	border-radius: 5px;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+#PnrNum {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+#form input[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	margin-bottom: 1px;
+	padding: 4px;
+	border: 0px;
+	border-radius: 1px;
+	cursor: unset;
+	width: 13%;
+	font-size: 15px;
+	border-top: solid;
+}
+
+#form input[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+/* PNR Status Styles */
+#PNREnquiry center {
+	text-align: center;
+}
+
+#PNREnquiry h2 {
+	color: #4CAF50;
+}
+
+#PNREnquiry hr {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border: 0;
+	border-top: 1px solid #ccc;
+}
+
+.output-label {
+	font-weight: bold;
+	color: #333;
+	margin-right: 10px;
+	display: inline-block;
+}
+
+.output-text {
+	color: #555;
+	display: inline-block;
+}
+
+/* Additional Styles */
+a {
+	color: #004080;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* IRCTC-like styles */
+.irctc-heading {
+	background-color: #e86500;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+.irctc-logo {
+	width: 7rem;
+	height: 4rem;
+	display: inline-block;
+	margin: -9px auto;
+}
+
+.irctc-info {
+	text-align: center;
+	color: black;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.t2 {
+	display: inline-block;
+}
+
+.center table {
+	margin-left: auto;
+	margin-right: auto;
+	/* Center the table horizontally within its container */
+}
+
+.center td, .center th {
+	text-align: left; /* Align the text within table cells to the left */
+	padding: 10px; /* Add padding for better readability */
+}
+
+.center th {
+	background-color: #f2f2f2; /* Set background color for header cells */
+}
+
+.centerText {
+	text-align: center;
+}

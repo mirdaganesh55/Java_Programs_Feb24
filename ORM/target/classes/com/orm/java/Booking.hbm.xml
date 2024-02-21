@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!-- Generated Feb 15, 2024, 3:40:21 PM by Hibernate Tools 3.6.2.Final -->
+<hibernate-mapping>
+
+	<class name="com.orm.java.Booking" table="BOOKING">
+
+		<id name="bookingId" type="int">
+
+			<column name="BOOKINGID" />
+			<generator class="assigned" />
+		</id>
+
+
+		<property name="pnr" type="int">
+			<column name="pnr" />
+		</property>
+
+		<property name="trainNo" type="int">
+			<column name="TRAINNO" />
+		</property>
+
+		<property name="passengerName" type="java.lang.String">
+			<column name="PASSENGERNAME" />
+		</property>
+		
+		<property name="trainName" type="java.lang.String">
+			<column name="TrainName" />
+		</property>
+
+		<property name="coach" type="java.lang.String">
+			<column name="COACH" />
+		</property>
+		<property name="quote" type="java.lang.String">
+			<column name="quote" />
+		</property>
+		<property name="status" type="java.lang.String">
+			<column name="status" />
+		</property>
+
+		<property name="age" type="int">
+			<column name="AGE" />
+		</property>
+
+		<property name="gender" type="java.lang.String">
+			<column name="GENDER" />
+		</property>
+
+		<property name="source" type="java.lang.String">
+			<column name="SOURCE" />
+		</property>
+
+		<property name="destination" type="java.lang.String">
+			<column name="DESTINATION" />
+		</property>
+		<property name="journeyDate" type="java.lang.String">
+			<column name="journeyDate" />
+		</property>
+
+		<property name="cost" type="double">
+			<column name="COST" />
+		</property>
+		
+	<property generated="never" lazy="false" name="ticketBookedDate" optimistic-lock="true" type="java.util.Date" unique="false">
+<column name="TicketBookedDate"/>
+</property>
+
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,34 @@
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: #f7f7f7;
+}
+
+.form-border {
+	border: 2px solid #333;
+	padding: 20px;
+	margin: 20px auto;
+	max-width: 400px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+h2 {
+	color: #333;
+	text-align: center;
+}
+
+h:outputLabel {
+	display: block;
+	margin-top: 10px;
+	color: #333;
+}
+
+h:outputText {
+	display: block;
+	margin-bottom: 15px;
+	color: #555;
+}
+
+hr {
+	border: 1px solid #ddd;
+}

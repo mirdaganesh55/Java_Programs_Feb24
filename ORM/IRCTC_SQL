@@ -1,0 +1,121 @@
+create database IRCTC;
+use irctc;
+truncate booking;
+
+select * from Booking;
+select * from Train;
+select * from stations;
+ALTER TABLE Booking
+ADD journeyDate varchar(30);
+
+ALTER TABLE Booking
+DROP COLUMN journeyDate;
+
+ALTER TABLE Booking
+ADD status VARCHAR(50);
+create table Booking(
+	pnr int,
+	BookingId  int primary key,
+	trainNo int,
+    passengerName varchar (30),
+    Coach varchar(20),
+    Age int,
+    Gender varchar(10),
+    Source varchar(20),
+    destination varchar(20),
+    cost double
+);
+
+create table Train(
+	Number int,
+    Train_Name varchar(20),
+    SL_Price int,
+    3A_Price int,
+    2A_Price int,
+    1A_Price int
+);
+INSERT INTO Train (Number, Train_Name, SL_Price, 3A_Price, 2A_Price, 1A_Price)
+VALUES
+(20704, 'Vande Bharat', 500, 1500, 2500, 4000),
+(22691, 'Duronto Express', 600, 1800, 3000, 5000),
+(12704, 'Rajdhani Express', 800, 2500, 4000, 7000),
+(18645,'EAST COAST EXP', 850,1400,2200,3500);
+
+CREATE TABLE users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    captcha VARCHAR(6) NOT NULL
+);
+INSERT INTO users (username, password, captcha) VALUES ('ganu', 'ganu', 'ABC123');
+
+    
+CREATE TABLE stations (
+    short_name VARCHAR(10) PRIMARY KEY,
+    full_name VARCHAR(255) NOT NULL
+);
+
+INSERT INTO stations (short_name, full_name) VALUES
+('NDLS', 'New Delhi'),
+('BCT', 'Mumbai Central'),
+('HWH', 'Howrah Junction'),
+('MAS', 'Chennai Central'),
+('ADI', 'Ahmedabad Junction'),
+('PNBE', 'Patna Junction'),
+('SBC', 'KSR Bengaluru'),
+('CSTM', 'Chhatrapati Shivaji Maharaj Terminus'),
+('HYB', 'Hyderabad Deccan'),
+('NDS', 'Nagpur Junction'),
+('RMM', 'Rameswaram'),
+('BZA', 'Vijayawada Junction'),
+('JP', 'Jaipur Junction'),
+('YPR', 'Yesvantpur Junction'),
+('TVC', 'Thiruvananthapuram Central'),
+('GHY', 'Guwahati'),
+('VSKP', 'Visakhapatnam Junction'),
+('PUNE', 'Pune Junction'),
+('BSP', 'Bilaspur Junction'),
+('GKP', 'Gorakhpur Junction'),
+('BKN', 'Bikaner Junction'),
+('ASN', 'Asansol Junction'),
+('NJP', 'New Jalpaiguri Junction'),
+('RJT', 'Rajkot Junction'),
+('NLR', 'Nellore'),
+('MDU', 'Madurai Junction'),
+('CCU', 'Netaji Subhas Chandra Bose International Airport'),
+('KGP', 'Kharagpur Junction'),
+('JHS', 'Jhansi Junction'),
+('NZM', 'Hazrat Nizamuddin'),
+('TVR', 'Tenkasi Junction'),
+('ERS', 'Ernakulam Junction'),
+('NGP', 'Nagpur Junction'),
+('GZB', 'Ghaziabad Junction'),
+('BSB', 'Varanasi Junction'),
+('VAPI', 'Vapi'),
+('MMCT', 'Mumbai Central Terminus'),
+('CDG', 'Chandigarh Junction'),
+('GNT', 'Guntur Junction'),
+('SEC', 'Secunderabad Junction'),
+('CBE', 'Coimbatore Junction'),
+('BPL', 'Bhopal Junction'),
+('MYS', 'Mysuru Junction'),
+('SUR', 'Solapur Junction'),
+('MTJ', 'Mathura Junction'),
+('RJY', 'Rajahmundry'),
+('GWL', 'Gwalior Junction'),
+('RNC', 'Ranchi Junction'),
+('NAG', 'Nagda Junction'),
+('SRR', 'Shoranur Junction'),
+('MAO', 'Madgaon Junction'),
+('SRE', 'Saharanpur Junction'),
+('DLI', 'Delhi Junction'),
+('KYN', 'Kalyan Junction'),
+('UBL', 'Hubli Junction'),
+('CSMT', 'Chhatrapati Shivaji Maharaj Terminus'),
+    ('KCG', 'Kacheguda'),
+    ('PNQ', 'Pune'),
+    ('GOA', 'Goa'),
+('BBS','Bhubaneswar'),
+('BLS','Balasore'),
+('JER','Jaleswar');
+
