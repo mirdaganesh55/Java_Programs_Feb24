@@ -1,0 +1,45 @@
+create database food;	
+DROP DATABASE IF EXISTS food;
+
+use food;
+
+CREATE TABLE items (
+    Id INT PRIMARY KEY,
+    item VARCHAR(30),
+    price INT
+     -- Assuming the URLs can be up to 255 characters
+);
+select * from items;
+INSERT INTO items (Id, item, price) VALUES
+(1, 'Chicken Biryani', 290),
+(2, 'Vegetable Biryani', 100),
+(3, 'Chicken Curry', 300),
+(4, 'Paneer Tikka', 2000),
+(5, 'Butter Chicken', 320),
+(6, 'Fish Tandoori', 430),
+(7, 'Dal Makhani', 100),
+(8, 'Mutton Biryani', 230),
+(9, 'Aloo Gobi', 500),
+(10, 'Palak Paneer', 980);
+create table login(
+	username varchar(30),
+    passcode varchar(30)
+);
+select * from login;
+INSERT INTO login (username, passcode) VALUES ('Ganuu', 'Gannu@2023');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
